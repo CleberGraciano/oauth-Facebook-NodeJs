@@ -1,0 +1,37 @@
+{
+  "name": "nodejs-passport-authentication",
+  "version": "1.0.0",
+  "description": "A simple Node/Express JS API for social user authentication using Passport",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel app --out-dir dist",
+    "start": " concurrently \"mongod \" \"nodemon --exec babel-node app/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Cleber Batista Graciano",
+  "license": "MIT",
+  "bugs": {
+ 
+  },
+
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.0.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.11",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "nodemon": "^1.19.1"
+  }
+}
